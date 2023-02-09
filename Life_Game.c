@@ -183,7 +183,6 @@ void myReshape(int width,int height)//width, height  :ウィンドウの幅と�
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity(); //変換行列の初期化（単位行列）
 	//ビューポートに描画する座標の範囲の縦横比をウィンドウの大きさに合わせて指定
-	//初期状態でcg1-1.cと同じ -1<= x < 1, -1 < y < 1になるようにスケールを調整
 	glOrtho(N*2,N*3, N*2, N*3,-1.0,1.0);
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();//変換行列の初期化(単位行列)
